@@ -1,15 +1,164 @@
 <!doctype html>
 <html>
-  <head>
-    <title>My first webpage</title>
-    <style>
-      body {margin: 20%; font-family: sans-serif; font-size: 1.5em;}
-      h1 {letter-spacing: 0.05em;}
-      p {color: grey;}
-    </style>
-  </head>
-  <body>
-    <h1>My first webpage</h1>
-    <p>I'm so smart</p>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/34fa48ada4.js" crossorigin="anonymous"></script>
+
+	<img  id="logo" src="immagini/logo.png" alt="logo la musica come cura" style="width:100%;"/>
+
+	
+</head>
+
+<body class="container-fluid">
+
+	<header>
+	
+
+		<nav class="container">
+			<ul> 
+			
+				<li><a class="background" class="black" href="index.html">Home</a></li>
+				<li><a  class="black" href="support.html">Support</a></li>
+        <li><a class="black" href="about.html">About</a></li>
+ 
+			</ul>
+
+		</nav>
+	
+	</header>
+
+	<main>
+			<label id="search"for="cerca">Cerca:</label>
+      <input type="search" id="cerca" name="cerca">
+		<button class="vai">Vai</button>
+		
+	<section>
+	<div class="row">
+  <div class="col-3"><h2>Ci trovi sui social :)</h2>
+
+                    <p>Gli ultimi post Instangram</p>
+
+	<div id="post1" class="foto">
+    <img src="immagini/eri1.JPG">
+  <div class="descrizione">"La musicoterapia utilizza la musica..."
+  	<form action="https://www.instagram.com/p/CdtTzOQITMJ/" target="_blank">
+  <button type="vai">
+    Vai
+  </button>  
+</form>
+  </div>
+</div>
+
+<div id="post2"class="foto">
+    <img src="immagini/manor.JPG">
+  <div class="descrizione">"La musicoterapia può essere utilizzata nei casi di depressione..."
+  <form action="https://www.instagram.com/p/CdtTvb-oq_x/" target="_blank">
+  <button type="vai">
+    Vai
+  </button>  
+</form></div>
+</div>
+<div id="post3" class="foto">
+    <img src="immagini/sem1.JPG">
+  <div class="descrizione">"La musicoterapia viene usata anche in ambito scolastico per favorire..."
+  <form action="https://www.instagram.com/p/CdtTqrRIzZt/" target="_blank">
+  <button type="vai">
+    Vai
+  </button>  
+</form></div>
+</div>
+			</div> <!-- 25% -->
+
+				
+<div class="col-9">
+  <h2>La Musicoterapia </h2>
+				<p>Nella vita di tutti i giorni una delle cose più importanti che è sempre con noi è la musica. La natura stessa crea musica: il cinguettio degli uccelli in primavera; il frinire dei grilli nelle notti d'estate. Le sinfonie ci accompagnano ogni singolo secondo della nostra vita. <br>
+         E la musica ci tiene compagnia: nei momenti felici e nei momenti tristi; durante delle passeggiate solitarie o durante uscite di gruppo; in autobus o scuola; in palestra o a lavoro.  </p>
+
+    <p>Essa è una grande alleata che riempie le orecchie, ci fa stare bene e ci conforta nei momenti meno felici, contribuisce al nostro benessere perché rilassa, distrae e carica di energia.</p>
+
+    <p>La musica attiva e influenza pensieri, emozioni, sensazioni e comportamenti, per questo motivo ha anche un indubbio potere curativo. <span class="stile">Ed è proprio in relazione al suo potere curativo che si è sviluppata come disciplina ufficiale la musicoterapia che utilizza la musica e i suoi elementi (suono, ritmo, melodia e armonia) per facilitare la comunicazione, le relazioni, l’apprendimento, la motricità, l’espressione, ed in generale per dare supporto e promuovere il benessere psicologico della persona.</span></p>
+
+    <p>La musicoterapia è associata in genere ad altre terapie e può essere sfruttata in diversi ambiti: indivduali, di gruppo, negli adulti ma anche nei bambini.</p>
+    <p>Può essere utilizzata nei casi di depressione, ansia, dislessia, difficoltà relazionali e dipendenze. Ma viene utilizzata anche nel settore neurologico (morbo di Parkinson e Alzheimer). </p>
+
+    <p>Essa viene usata anche in ambito scolastico per favorire l'integrazione sociale, risolvere i problemi comportamentali, la mancanza di autostima e altri tipi di disagio che possono provenire da problemi familiari o sociali. <br>  Ed è per questo motivo che nasce questa pagina. <span class="stile">Siamo qui per cercare di far conoscere e avvicinare il più possibile la musicoterapia ai giovani. </span> <br> Scopri di più <b><a class="qui"href="support.html" >Qui</a></b></p>
+
+   
+    
+    
+    
+   
+   
+    <div class="carosello">
+      <div class="slide1">
+        <img src="immagini/manos.JPG" style="width:100%">
+      </div>
+      <div class="slide1">
+        <img src="immagini/fan.JPG" style="width:100%">
+      </div>
+      <div class="slide1">
+        <img src="immagini/atry1.JPG " style="width:100%">
+      </div>
+      <a class="prec" onclick="cambiaSlide(-1, 0)">&#10094;
+      </a>
+      <a class="succ" onclick="cambiaSlide(1, 0)">&#10095;
+      </a>
+    </div>
+   
+    <script>
+      var slideTab = [1,1];
+      var slideId = []
+      var slides = document.getElementsByClassName("carosello");
+      for (var e = 1; e <= slides.length; e++){
+        slideId.push("slide"+e);
+      }
+      creaSlide(1, 0);
+      creaSlide(1, 1);
+      function cambiaSlide(n, no) {
+        creaSlide(slideTab[no] += n, no);
+      }
+      function creaSlide(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+          slideTab[no] = 1}
+        if (n < 1) {
+          slideTab[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideTab[no]-1].style.display = "block";
+      }
+    </script>
+</div> <!-- 75% -->
+
+  
+</section>
+	</main>
+	<footer>
+    <section>
+      <p>
+        <i id="mail"class="fa-regular fa-envelope"></i>
+        lamusicacomecura@outlook.it</p>
+        <p class="numero">
+          <i id="telefono" class="fa-solid fa-mobile-screen-button"></i>
+          +39 123456789</p>
+<p>
+    <i id="social1" class="fa-brands fa-instagram"></i>
+  <i id="social2" class="fa-brands fa-facebook"></i>
+  <i id="social3" class="fa-brands fa-twitter"></i>
+  </p>
+    </section>
+   
+	</footer>
+</body>
+
 </html>
