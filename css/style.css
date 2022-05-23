@@ -18,6 +18,11 @@ font-family: 'Nanum Gothic', sans-serif;
 }
 
 
+@media screen and (max-width: 600px) {
+  .black  {
+    font-size: 30px;
+  }
+}
 
 nav {margin-right: 10px}
 
@@ -36,7 +41,13 @@ nav ul li { display: inline-block}
         padding-bottom:0%;
         margin-bottom: 0%;
  	}
-
+  @media screen and (max-width: 600px) {
+  .background  {
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: #CDB094;
+  }
+}
 
 #logo { 
         max-width: 17.5%;
@@ -45,6 +56,11 @@ nav ul li { display: inline-block}
         height: auto;
       }
 
+@media screen and (max-width: 600px) {
+  #logo {
+    display: none;
+  }
+}
 #cerca {border-color:#759FB6 ;
 	background-color: white;
 text-decoration: none;
@@ -94,7 +110,13 @@ margin-left: 3%;}
   letter-spacing: 0.05em;  
 }
 
-
+*{
+  box-sizing: border-box;}
+  @media screen and (max-width: 600px) {
+  .col-3, .col-9 {
+    width: 100%;
+  }
+}
 
 .foto {
   margin: 5px;
@@ -124,7 +146,11 @@ color:black ;
 font-size: 15px;
 font-family: 'Playfair Display', serif;}
 
-
+@media screen and (max-width: 600px) {
+  #post3 {
+    display: none;
+  }
+}
 #post1 {
 margin-top: 20%;}
 #post2 {margin-top: 20%;}
